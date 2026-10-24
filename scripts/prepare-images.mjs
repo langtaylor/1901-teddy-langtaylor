@@ -1,0 +1,13 @@
+import sharp from 'sharp';
+import { mkdir } from 'node:fs/promises';
+const source=new URL('../public/images/',import.meta.url);
+const output=new URL('../public/media/',import.meta.url);
+await mkdir(output,{recursive:true});
+const images=[['poster','qy78suqy78suqy78',1000],['lang','l5dy00l5dy00l5dy',720],['workshop-day','c6fuhuc6fuhuc6fu',1600],['workshop-night','5e3v2m5e3v2m5e3v',1600]];
+await Promise.all(images.map(async([name,id,width])=>{await sharp(new URL(`Gemini_Generated_Image_${id}.png`,source).pathname).resize({width,withoutEnlargement:true}).webp({quality:85}).toFile(new URL(`${name}.webp`,output).pathname);}));
+await sharp(new URL('crew-youtube-v2.png',source).pathname).trim({background:'#000000',threshold:12}).resize({width:1800,withoutEnlargement:true}).webp({quality:85}).toFile(new URL('crew-youtube-v2.webp',output).pathname);
+const day=new URL('Gemini_Generated_Image_c6fuhuc6fuhuc6fu.png',source).pathname;
+await sharp(day).extract({left:1430,top:340,width:680,height:850}).resize(560,700).webp({quality:85}).toFile(new URL('robot.webp',output).pathname);
+await sharp(day).extract({left:90,top:930,width:650,height:650}).resize(560,560).webp({quality:85}).toFile(new URL('bird.webp',output).pathname);
+await sharp(new URL('Gemini_Generated_Image_qy78suqy78suqy78.png',source).pathname).extract({left:1050,top:160,width:640,height:1140}).resize(560,700,{fit:'cover'}).webp({quality:85}).toFile(new URL('paye.webp',output).pathname);
+console.log('Prepared eight optimized WebP images.');

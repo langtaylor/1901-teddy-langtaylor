@@ -1,0 +1,23 @@
+{
+  "name": "lang-taylor-home",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npm run images && astro dev --host 0.0.0.0",
+    "images": "node scripts/prepare-images.mjs",
+    "build": "npm run images && astro build",
+    "preview": "astro preview --host 0.0.0.0"
+  },
+  "dependencies": {
+    "astro": "^5.16.0",
+    "sharp": "^0.35.5"
+  },
+  "overrides": {
+    "sharp": "$sharp",
+    "unifont": "0.7.0"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  }
+}
