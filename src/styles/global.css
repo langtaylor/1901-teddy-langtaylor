@@ -25,3 +25,16 @@
 /* Keep the relocated YouTube sign visible in the footer artwork. */
 .crew-banner img{aspect-ratio:3.2;object-position:center}
 @media(max-width:760px){.crew-banner img{aspect-ratio:2.4;object-position:center}}
+
+/* The existing scene keeps its size; the complete 640×656 animation fits inside. */
+.world-animation{aspect-ratio:1.84;overflow:hidden;isolation:isolate;background:#252820}
+.world-animation>.world-original{position:absolute;inset:0;width:100%;height:100%;aspect-ratio:auto;object-fit:cover;filter:blur(9px) brightness(.7) saturate(.88);transform:scale(1.04)}
+.world-motion-front{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);height:100%;max-height:656px;aspect-ratio:640/656;max-width:100%;mask-image:linear-gradient(to right,transparent,#000 6%,#000 94%,transparent),linear-gradient(to bottom,transparent,#000 3%,#000 97%,transparent);mask-composite:intersect}
+.world-motion-front>img,.world-motion-front>video{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;filter:saturate(.88)}
+.world-motion-video{opacity:0}
+.world-animation[data-playback="playing"] .world-motion-video{opacity:1}
+.world-animation figcaption{z-index:1}
+.world-animation[data-playback="failed"] .world-motion-front{display:none}
+.world-animation[data-playback="failed"]>.world-original{filter:saturate(.88);transform:none;object-position:center 54%}
+@media(max-width:760px){.world-animation{aspect-ratio:1.24}.world-animation[data-playback="failed"]>.world-original{object-position:center}}
+@media(prefers-reduced-motion:reduce){.world-animation .world-motion-video{display:none}}

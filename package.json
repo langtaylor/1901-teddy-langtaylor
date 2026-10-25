@@ -6,8 +6,9 @@
   "scripts": {
     "dev": "npm run images && astro dev --host 0.0.0.0",
     "images": "node scripts/prepare-images.mjs",
-    "build": "npm run images && astro build",
-    "preview": "astro preview --host 0.0.0.0"
+    "build": "npm run images && astro build && node scripts/check-static-assets.mjs",
+    "preview": "astro preview --host 0.0.0.0",
+    "video:prepare": "node scripts/prepare-hero-video.mjs"
   },
   "dependencies": {
     "astro": "^5.16.0",

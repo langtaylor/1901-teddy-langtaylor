@@ -48,7 +48,16 @@ const arrow = '↗';
 <section id="world" class="world-section section-space" aria-labelledby="world-title"><div class="wrap">
 <div class="section-kicker"><span>02 — THE WORLD</span><span>이야기가 시작되는 곳</span></div>
 <div class="section-heading"><h2 id="world-title">미래에도,<br />손이 가는 일은 남는다.</h2><p>2040년. AI가 일상이 된 세상.<br />낡은 도구와 새로운 기술이 뒤섞인 공방에서<br />사람과 로봇의 이야기가 시작됩니다.</p></div>
-<figure class="world-image"><img src="/media/workshop-day.webp" width="1600" height="1193" alt="햇살이 드는 골목 공방에서 Lang과 흰 로봇, 작은 새가 함께 작업하는 모습" loading="lazy" /><figcaption><span class="image-label">SCENE 001</span><span>어느 날의 공방 · 2040</span><span aria-hidden="true">↙</span></figcaption></figure>
+<figure class="world-image world-animation" data-world-animation data-playback="poster">
+<img class="world-original" src="/media/workshop-day.webp" width="1600" height="1193" alt="햇살이 드는 골목 공방에서 Lang Taylor와 Android, Tailor Bird가 함께 작업하는 모습" loading="lazy" />
+<div class="world-motion-front" aria-hidden="true">
+<img class="world-motion-poster" src="/videos/lang-taylor-hero-poster.webp" width="640" height="656" alt="" loading="lazy" decoding="async" />
+<video class="world-motion-video" width="640" height="656" autoplay muted loop playsinline preload="metadata" poster="/videos/lang-taylor-hero-poster.webp" tabindex="-1" disablepictureinpicture>
+<source data-src="/videos/lang-taylor-hero.webm" type="video/webm" />
+<source data-src="/videos/lang-taylor-hero.mp4" type="video/mp4" />
+</video>
+</div>
+<figcaption><span class="image-label">SCENE 001</span><span>어느 날의 공방 · 2040</span><span aria-hidden="true">↙</span></figcaption></figure>
 <div class="world-bottom"><p>완벽한 미래보다,<br /><strong>고쳐 쓸 수 있는 내일.</strong></p><a class="button button-acid" href={links.workshop} target="_blank" rel="noopener noreferrer">Lang의 공방 둘러보기 <span aria-hidden="true">{arrow}</span><span class="sr-only"> (새 탭)</span></a></div>
 </div></section>
 <section class="dialogue-section wrap section-space" aria-labelledby="dialogue-title">
@@ -86,5 +95,8 @@ const arrow = '↗';
 <div class="crew-banner"><img src="/media/crew-youtube-v2.webp" width="1800" height="560" alt="Lang Taylor의 공방에 모인 인물들과 로봇, 새" loading="lazy" /></div>
 </main>
 <footer class="site-footer wrap"><a href="#" class="wordmark" aria-label="Lang Taylor 맨 위로">LANG TAYLOR<span class="brand-dot">✳</span></a><p>STILL HUMAN. STILL MAKING.</p><a href="#">맨 위로 <span aria-hidden="true">↑</span></a><small>© {new Date().getFullYear()} LANG TAYLOR</small></footer>
+<script>
+import '../scripts/world-animation';
+</script>
 </body>
 </html>
