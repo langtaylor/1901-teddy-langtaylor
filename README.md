@@ -1,4 +1,4 @@
-# Lang Taylor
+# Taylor Lang 
 
 Korean creator landing page built with Astro and static HTML/CSS. Supplied artwork appears throughout the page. No client framework or tracking script.
 
