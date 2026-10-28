@@ -1,0 +1,1 @@
+Built-in image_gen edit. Replace only central title LANG / TAYLOR with TAYLOR / LANG. Preserve comic panels, characters, colors, framing, bold white stencil lettering, diagonal needle and glowing thread.
