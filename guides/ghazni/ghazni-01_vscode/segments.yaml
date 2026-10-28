@@ -1,0 +1,97 @@
+guide: ghazni-01_vscode
+title: 'code . 이 안 될 때 — VS Code와 WSL 연결하기'
+narrator: fay-smith
+status: script-approved
+media_root: /mnt/c/Users/taylo/Videos/ghazni/ghazni-01_vscode
+body_video: 5_edit/trimmed.mp4
+body_duration: 139.7
+segments:
+  - id: intro
+    part: intro
+    text: '안녕하세요, 랭테일러 공방의 페이예요. 우분투 터미널에서 code . 을 쳤는데 "command not found"가 떴나요? 걱정 마세요. 금방 해결돼요.'
+    tts: '안녕하세요, 랭테일러 공방의 페이예요. 우분투 터미널에서 코드 점을 쳤는데 커맨드 낫 파운드가 떴나요? 걱정 마세요. 금방 해결돼요.'
+  - id: b01
+    part: body
+    start: 0
+    end: 5
+    text: '먼저 Windows용 VS Code를 내려받아요.'
+    tts: '먼저 윈도우용 브이에스 코드를 내려받아요.'
+  - id: b02
+    part: body
+    start: 5
+    end: 10
+    text: '설치 파일을 실행하고, 위치는 기본값 그대로 두세요.'
+    tts: '설치 파일을 실행하고, 위치는 기본값 그대로 두세요.'
+  - id: b03
+    part: body
+    start: 10
+    end: 15
+    highlight: true
+    text: '여기가 제일 중요해요. "PATH에 추가"가 꼭 체크돼 있어야 해요.'
+    tts: '여기가 제일 중요해요. 패스에 추가가 꼭 체크돼 있어야 해요.'
+  - id: b04
+    part: body
+    start: 15
+    end: 35
+    text: '이 체크 덕분에 우분투에서도 code 명령을 찾을 수 있어요. 설치가 끝날 때까지 잠깐 기다려요.'
+    tts: '이 체크 덕분에 우분투에서도 코드 명령을 찾을 수 있어요. 설치가 끝날 때까지 잠깐 기다려요.'
+  - id: b05
+    part: body
+    start: 35
+    end: 40
+    text: 'GitHub Copilot 도구도 함께 설치돼요. 그대로 두면 돼요.'
+    tts: '깃허브 코파일럿 도구도 함께 설치돼요. 그대로 두면 돼요.'
+  - id: b06
+    part: body
+    start: 40
+    end: 45
+    text: '마침을 누르면 VS Code가 열려요.'
+    tts: '마침을 누르면 브이에스 코드가 열려요.'
+  - id: b07
+    part: body
+    start: 45
+    end: 55
+    text: '처음엔 테마를 고르는 화면이 나와요. 마음에 드는 걸 고르세요.'
+    tts: '처음엔 테마를 고르는 화면이 나와요. 마음에 드는 걸 고르세요.'
+  - id: b08
+    part: body
+    start: 55
+    end: 75
+    text: '왼쪽 확장 메뉴에서 WSL을 검색하고, Microsoft가 만든 확장을 설치해요. Windows의 VS Code와 우분투를 이어 주는 다리예요.'
+    tts: '왼쪽 확장 메뉴에서 더블유에스엘을 검색하고, 마이크로소프트가 만든 확장을 설치해요. 윈도우의 브이에스 코드와 우분투를 이어 주는 다리예요.'
+  - id: b09
+    part: body
+    start: 75
+    end: 90
+    text: '이제 터미널에서 wsl --shutdown으로 한 번 껐다가, wsl로 다시 들어가요. 그래야 새 VS Code를 알아봐요.'
+    tts: '이제 터미널에서 더블유에스엘 셧다운으로 한 번 껐다가, 더블유에스엘로 다시 들어가요. 그래야 새 브이에스 코드를 알아봐요.'
+  - id: b10
+    part: body
+    start: 90
+    end: 100
+    highlight: true
+    text: '프로젝트 폴더에서 code . ! VS Code가 열리고, 왼쪽 아래에 WSL: Ubuntu가 보이면 성공이에요.'
+    tts: '프로젝트 폴더에서 코드 점! 브이에스 코드가 열리고, 왼쪽 아래에 더블유에스엘 우분투가 보이면 성공이에요.'
+  - id: b11
+    part: body
+    start: 100
+    end: 125
+    text: '덤으로, 확장에서 Claude Code와 Codex를 설치하면 AI 도우미도 쓸 수 있어요. 각자 구독 계정으로 로그인하면 돼요.'
+    tts: '덤으로, 확장에서 클로드 코드와 코덱스를 설치하면 에이아이 도우미도 쓸 수 있어요. 각자 구독 계정으로 로그인하면 돼요.'
+  - id: b12
+    part: body
+    start: 125
+    end: 130
+    text: '새 폴더 hello-world를 만들고 들어가서, code . 을 입력해요.'
+    tts: '새 폴더 헬로 월드를 만들고 들어가서, 코드 점을 입력해요.'
+  - id: b13
+    part: body
+    start: 130
+    end: 139.7
+    highlight: true
+    text: '새 프로젝트도 WSL에서 바로 열렸어요. 처음 열 때 신뢰하겠냐고 물으면, 내가 만든 폴더니까 신뢰를 누르면 돼요.'
+    tts: '새 프로젝트도 더블유에스엘에서 바로 열렸어요. 처음 열 때 신뢰하겠냐고 물으면, 내가 만든 폴더니까 신뢰를 누르면 돼요.'
+  - id: outro
+    part: outro
+    text: '정리할게요. code 명령이 안 될 땐, VS Code 설치할 때 PATH 추가, 그리고 WSL 확장. 이 두 가지만 기억하세요. 다음 가이드에서 또 만나요!'
+    tts: '정리할게요. 코드 명령이 안 될 땐, 브이에스 코드 설치할 때 패스 추가, 그리고 더블유에스엘 확장. 이 두 가지만 기억하세요. 다음 가이드에서 또 만나요!'
