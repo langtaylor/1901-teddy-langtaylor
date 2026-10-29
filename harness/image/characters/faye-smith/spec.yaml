@@ -1,0 +1,16 @@
+id: faye-smith
+trigger: fysmth            # LoRA 학습용 고유 단어
+fixed:
+  age: 25
+  skin: tan, warm brown
+  hair: voluminous curly reddish-brown hair, messy high bun, loose side locks
+  eyes: brown, sharp
+  brows: thick, sharp
+  accessories: black sunglasses pushed up on head, small hoop earring
+  outfit: navy work jacket over gray t-shirt, cargo pants, work boots
+colors:                    # 화면에서 이 색을 벗어나면 불합격
+  hair: "#7A3B22"
+  jacket: "#1F2A44"
+  shirt: "#8C9096"
+never: [purple hair, headband, glasses on face by default, tank top]
+personality_pose: confident, tomboy, leaning forward, hands busy with tools
