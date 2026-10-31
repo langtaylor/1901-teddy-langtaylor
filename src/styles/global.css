@@ -22,7 +22,13 @@
 @media(min-width:761px) and (max-width:1100px){.characters-grid{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:35px}}
 @media(max-width:760px){.characters-grid{grid-template-columns:1fr}.dialogue{margin-top:30px}.dialogue blockquote{font-size:19px;letter-spacing:-.5px}.dialogue blockquote p+p{margin-top:23px}.dialogue .dialogue-last{font-size:25px}}
 
-.character-image>img{aspect-ratio:1}
+.character-image{aspect-ratio:1}
+.character-image>img{position:absolute;width:204%;max-width:none;height:204%;aspect-ratio:auto;object-fit:fill;transition:none}
+.character:hover .character-image>img{transform:none}
+.character-panel-01>img{left:0;top:0}
+.character-panel-02>img{right:0;top:0}
+.character-panel-03>img{left:0;bottom:0}
+.character-panel-04>img{right:0;bottom:0}
 
 /* The 1500×500 crew banner follows the viewport width at its native 3:1 ratio, uncropped, so the @langtaylor sign stays visible. */
 .crew-banner img{width:100%;max-width:100%;height:auto;aspect-ratio:3/1;object-fit:contain}

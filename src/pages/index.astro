@@ -2,6 +2,7 @@
 import { links, episodes } from '../data/site';
 import '../styles/global.css';
 const arrow = '↗';
+const characterImage = 'https://media.langtailor.com/images/4_characters_one_shot.webp';
 ---
 <!doctype html>
 <html lang="ko">
@@ -74,10 +75,10 @@ const arrow = '↗';
 <div class="section-kicker"><span>03 — THE CHARACTERS</span><span>공방의 얼굴들</span></div>
 <div class="section-heading"><h2 id="characters-title">혼자 만드는 세상은<br />재미없으니까.</h2><p>다른 모습, 다른 속도.<br />같은 작업대 위에서 만나는 이들.</p></div>
 <div class="characters-grid">
-<article class="character"><div class="character-image"><img src="/media/character-01.webp" alt="초록 배경의 Taylor Lang 캐릭터 초상" width="720" height="720" loading="lazy" /><span class="character-number">01</span></div><div class="character-title"><h3>Taylor Lang</h3><span>THE TINKERER</span></div><p>고장 난 것 앞에서는 일단 앉고 보는 사람.<br />이야기의 중심이자, 공방의 주인.</p></article>
-<article class="character"><div class="character-image"><img src="/media/character-02.webp" alt="적색 배경의 Paye Smith 캐릭터 초상" width="720" height="720" loading="lazy" /><span class="character-number">02</span></div><div class="character-title"><h3>Paye Smith</h3><span>공방의 얼굴</span></div><p>Taylor Lang와 함께 이야기 속에서 만나는 또 한 사람.</p></article>
-<article class="character"><div class="character-image"><img src="/media/character-03.webp" alt="청색 배경의 Null Cracker 캐릭터 초상" width="720" height="720" loading="lazy" /><span class="character-number">03</span></div><div class="character-title"><h3>Null Cracker</h3><span>의문의 해커</span></div><p>정체도 목적도 아직 밝혀지지 않았다.</p></article>
-<article class="character"><div class="character-image"><img src="/media/character-04.webp" alt="노란 배경의 Android와 Tailor Bird" width="720" height="720" loading="lazy" /><span class="character-number">04</span></div><div class="character-title"><h3>Android &amp; Tailorbird</h3><span>THE LITTLE WITNESS</span></div><p>작업대 한쪽을 차지한 작은 동료.<br />이 공방을 가장 가까이서 바라보는 눈.</p></article>
+<article class="character"><div class="character-image character-panel-01"><img src={characterImage} alt="초록 배경의 Taylor Lang 캐릭터 초상" width="1247" height="1261" loading="lazy" /><span class="character-number">01</span></div><div class="character-title"><h3>Taylor Lang</h3><span>THE TINKERER</span></div><p>고장 난 것 앞에서는 일단 앉고 보는 사람.<br />이야기의 중심이자, 공방의 주인.</p></article>
+<article class="character"><div class="character-image character-panel-02"><img src={characterImage} alt="적색 배경의 Paye Smith 캐릭터 초상" width="1247" height="1261" loading="lazy" /><span class="character-number">02</span></div><div class="character-title"><h3>Paye Smith</h3><span>공방의 얼굴</span></div><p>Taylor Lang와 함께 이야기 속에서 만나는 또 한 사람.</p></article>
+<article class="character"><div class="character-image character-panel-03"><img src={characterImage} alt="청색 배경의 Null Cracker 캐릭터 초상" width="1247" height="1261" loading="lazy" /><span class="character-number">03</span></div><div class="character-title"><h3>Null Cracker</h3><span>의문의 해커</span></div><p>정체도 목적도 아직 밝혀지지 않았다.</p></article>
+<article class="character"><div class="character-image character-panel-04"><img src={characterImage} alt="노란 배경의 Android와 Tailor Bird" width="1247" height="1261" loading="lazy" /><span class="character-number">04</span></div><div class="character-title"><h3>Android &amp; Tailorbird</h3><span>THE LITTLE WITNESS</span></div><p>작업대 한쪽을 차지한 작은 동료.<br />이 공방을 가장 가까이서 바라보는 눈.</p></article>
 </div></section>
 <section id="channel" class="channel-section section-space" aria-labelledby="channel-title"><div class="wrap">
 <div class="section-kicker"><span>04 — ON AIR</span><span>계속되는 이야기</span></div>

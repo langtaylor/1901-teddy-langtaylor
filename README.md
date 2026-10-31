@@ -26,7 +26,7 @@ The static site is generated in `dist/`. These commands do not deploy. For futur
 - `src/styles/global.css`: responsive styles and reduced-motion support.
 - `src/data/site.ts`: destination links and typed `episodes` array. Add real published videos to show video cards. An empty array shows the YouTube channel feature without fabricated episodes.
 - `public/images/`: original supplied artwork; preserved unchanged.
-- `scripts/prepare-images.mjs`: creates compressed WebP images and four 1008×1008 character panels from `public/images/4_characters_one_shot.png` in `public/media/`, before development and production builds.
+- `scripts/prepare-images.mjs`: creates compressed WebP images in `public/media/` and removes obsolete local character crops. The character cards display their panels from the shared R2 image URL.
 
 Navigation and contacts use native anchors. External links use a new tab with `noopener noreferrer`. Email links open the visitor's mail app; mailbox creation and routing are not configured by the site.
 
