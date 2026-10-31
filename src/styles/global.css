@@ -22,9 +22,10 @@
 @media(min-width:761px) and (max-width:1100px){.characters-grid{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:35px}}
 @media(max-width:760px){.characters-grid{grid-template-columns:1fr}.dialogue{margin-top:30px}.dialogue blockquote{font-size:19px;letter-spacing:-.5px}.dialogue blockquote p+p{margin-top:23px}.dialogue .dialogue-last{font-size:25px}}
 
-/* Keep the relocated YouTube sign visible in the footer artwork. */
-.crew-banner img{aspect-ratio:3.2;object-position:center}
-@media(max-width:760px){.crew-banner img{aspect-ratio:2.4;object-position:center}}
+.character-image>img{aspect-ratio:1}
+
+/* The 1500×500 crew banner follows the viewport width at its native 3:1 ratio, uncropped, so the @langtaylor sign stays visible. */
+.crew-banner img{width:100%;max-width:100%;height:auto;aspect-ratio:3/1;object-fit:contain}
 
 /* The existing scene keeps its size; the complete 640×656 animation fits inside. */
 .world-animation{aspect-ratio:1.84;overflow:hidden;isolation:isolate;background:#252820}
